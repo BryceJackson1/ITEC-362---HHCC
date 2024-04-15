@@ -1,5 +1,4 @@
-/* styles.css */
-
+/* mystyle.css */
 /* Resetting default margin and padding */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
@@ -48,15 +47,56 @@ main {
 img {
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto;
     max-height: 300px; /* Adjust the maximum height as needed */
+}
+
+/* Styling text and image section */
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure each section takes up 100% width */
+}
+
+/* Styling text content */
+section p {
+    flex-basis: calc(50% - 20px); /* Adjust the width of the text content */
+    text-align: justify;
+}
+
+/* Styling image content */
+section img {
+    flex-basis: calc(50% - 20px); /* Adjust the width of the image content */
 }
 
 /* Styling the footer */
 footer {
     background-color: #333;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 40px;
-    height: 15vh;
+    height: 105vh;
+}
+
+/* Centering the "Begin Your Journey to Become Closer to God" link */
+.cta-button {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #080808; /* Adding white border */
+    padding: 10px 20px;
+    color: #080808;
+    text-decoration: none;
+}
+
+/* Styling the "Book an Appointment" link */
+.book-appointment {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #0a0a0a; /* Adding border */
+    padding: 10px 20px;
+    color: #080808;
+    text-decoration: none;
 }
