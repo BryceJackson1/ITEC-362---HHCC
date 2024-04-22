@@ -22,6 +22,21 @@
         .center {
             text-align: center;
         }
+        
+            footer {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            footer section:last-child {
+                margin-top: auto;
+            }
+            
+            #copyright {
+                text-align: center;
+                font-style: italic;
+                color: #ffffff;
+            }
     </style>
 </head>
 <body>
@@ -65,7 +80,7 @@
                 <label for="email">Email Address:</label><br>
                 <input type="email" id="email" name="email" required><br><br>
                 
-                <input type="submit" value="Submit">
+                <input type="submit" value="Join Us">
             </form>
         </section>
     
@@ -76,9 +91,9 @@
         <section>
             <img src="photo.png" class="footer-img">
             <p id="contact-email">HeavenlyHandsBeauty@yahoo.com</p>
-            <p>864-516-4278</p>
-            <p>The Lord is my light and my salvation— whom shall I fear? The Lord is the stronghold of my life— of whom shall I be afraid? Psalm 27:1</p>
-            <p>&copy; 2024 Heavenly Hands Christian Counseling</p>
+            <p id="contact-number">864-516-4278</p>
+            <p id="trademark">The Lord is my light and my salvation— whom shall I fear? The Lord is the stronghold of my life— of whom shall I be afraid? Psalm 27:1</p>
+            <p id="copyright">&copy; 2024 Heavenly Hands Christian Counseling</p>
         </section>
     </footer>
 </body>

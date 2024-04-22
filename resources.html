@@ -14,6 +14,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heavenly Hands Chrisitan Counseling</title>
+
+    <style>
+        footer {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        footer section:last-child {
+            margin-top: auto;
+        }
+        
+        #copyright {
+            text-align: center;
+            font-style: italic;
+            color: #ffffff;
+        }
+        section {
+            display: grid;
+            grid-template-columns: auto;
+            grid-gap: 10px;
+            margin-left: 20px;
+        }
+        
+        div {
+            columns: 300px 2;
+            } 
+        div #client1{
+            column-count: 1;
+            break-inside: avoid;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -39,7 +70,12 @@
 
     <section>
         <h3>Testimonials</h3>
-        <p>Client testimonial  section. Client gives a small piece on how her counselor helped her faith. And what it means to be aprt of this organization and how their guidance helped them.</p>
+        <div id="client1">
+            <p>"Working with Heavenly Hands Christian Counseling has truly been a transformative experience for me. When I first reached out for counseling, I was struggling with overwhelming anxiety and a sense of hopelessness. However, from the moment I stepped into their office, I felt a sense of warmth and acceptance that immediately put me at ease. My counselor listened with empathy and understanding, 
+            providing me with practical tools and biblical insights to navigate through my challenges. Through our sessions, I have gained a deeper understanding of myself, 
+            found healing from past wounds, and discovered a renewed sense of faith and purpose. I am incredibly grateful for the support and guidance I have received from Heavenly Hands Christian Counseling, 
+            and I highly recommend their services to anyone seeking compassionate and faith-based counseling."</p>
+        </div>
     </section>
 
     <section>
@@ -63,24 +99,22 @@
             <label for="email">Email Address:</label><br>
             <input type="email" id="email" name="email" required><br><br>
             
-            <input type="submit" value="Submit">
+            <input type="submit" value="Join Us">
         </form>
         </section>
 
         <section>
-            <a href="https://calendly.com/your-username" class="cta-button" target="_blank">Book an Appointment</a>
+            <a href="https://calendly.com/your-username" class="book-appointment" target="_blank">Book an Appointment</a>
         </section>
         <section>
             <img src="photo.png" class="footer-img">
-            <p>
-                HeavenlyHandsBeauty@yahoo.com
-            </p>
-            <p>
+            <p id="contact-email">HeavenlyHandsBeauty@yahoo.com</p>
+            <p id="contact-number">
                 864-516-4278
             </p>
-            <p>The Lord is my light and my salvation— whom shall I fear? The Lord is the stronghold of my life— of whom shall I be afraid?
+            <p id="trademark">The Lord is my light and my salvation— whom shall I fear? The Lord is the stronghold of my life— of whom shall I be afraid?
                 Psalm 27:1</P>
-            <p>&copy; 2024 Heavenly Hands Christian Counseling</p>
+            <p id="copyright">&copy; 2024 Heavenly Hands Christian Counseling</p>
         </section>
     </footer>
 </body>
