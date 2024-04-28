@@ -1,4 +1,49 @@
-/* mystyle.css */
+.column {
+    float: left;
+    width: 31%; /* Each column takes up one-third of the width */
+    padding: 10px; /* Remove padding to ensure columns fit within the available space */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.column1 {
+    float: left;
+    width: 31%; /* Each column takes up one-third of the width */
+    padding: 0; /* Remove padding to ensure columns fit within the available space */
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  /* Clear floats after the columns */
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column2 img {
+    max-width: 40%; /* Set the maximum width of the images to 100% */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto;
+  }
+  .column2 {
+    float: left;
+    width: 31%; /* Each column takes up one-third of the width */
+    padding: 0; /* Remove padding to ensure columns fit within the available space */
+  }
+  
+  /* Clear floats after the columns */
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* mystyle.css */
 /* Resetting default margin and padding */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
@@ -116,27 +161,6 @@ footer {
 .cta-button:hover{
     background: rgb(255, 255, 255);
 }
-
-/* Styling the "Book an Appointment" link */
-.book-appointment {
-    display: inline-block;
-    margin: 0 auto;
-    text-align: center;
-    border: 2px solid #000000; /* Adding border */
-    padding: 10px 20px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    background-color: #cf6a6a;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.book-appointment:hover{
-    background: #ffffff;
-}
-
 #contact-email{
     position: absolute;
     top: 300px;
