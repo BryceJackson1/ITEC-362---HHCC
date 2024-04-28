@@ -83,7 +83,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about_us.html">About</li>
+                <li><a href="about_us.html">About</a></li>
                 <li><a href="resources.html">Blogs and Resources</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
@@ -150,7 +150,7 @@
 
     <footer>
         <section>
-            <form action="submit-form-url" method="post">
+            <form action="submit-form-url" method="post" onsubmit="return validateForm()">
                 <label for="firstname">First Name:</label><br>
                 <input type="text" id="firstname" name="firstname" required><br><br>
                 
@@ -166,6 +166,32 @@
                 <input type="submit" value="Join Us">
             </form>
         </section>
+
+        <script>
+            function validateForm() {
+                var firstName = document.getElementById("firstname").value;
+                var lastName = document.getElementById("lastname").value;
+                var phone = document.getElementById("phone").value;
+                var email = document.getElementById("email").value;
+                
+                // Perform validation checks
+                if (firstName === "" || lastName === "" || phone === "" || email === "") {
+                    alert("Please fill in all fields.");
+                    return false;
+                }
+                
+                // Validate phone number format
+                var phonePattern = /^\d{3}-\d{3}-\d{4}$/;
+                if (!phonePattern.test(phone)) {
+                    alert("Please enter a valid phone number in the format XXX-XXX-XXXX.");
+                    return false;
+                }
+                
+                // Add more validation rules as needed
+                
+                return true; // If all validation passes, return true to submit the form
+            }
+        </script>
 
         <section>
             <a href="https://calendly.com/your-username" class="book-appointment" target="_blank">Book an Appointment</a>
