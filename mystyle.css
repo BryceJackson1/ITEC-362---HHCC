@@ -101,7 +101,6 @@ footer {
 }
 
 
-
 /* Centering the "Begin Your Journey to Become Closer to God" link */
 .cta-button {
     display: inline-block;
@@ -146,3 +145,65 @@ footer {
     color: #fff; /* Set color to match footer text */
     font-size: 14px; /* Adjust font size as needed */
 }
+#contact-number{
+    position: absolute;
+    top: 330px;
+    bottom: 10px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    color: #fff; /* Set color to match footer text */
+    font-size: 14px; /* Adjust font size as needed */
+}
+#trademark{
+    position: absolute;
+    top: 360px;
+    bottom: 10px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    color: #fff; /* Set color to match footer text */
+    font-size: 14px; /* Adjust font size as needed */
+}
+.column {
+    float: left;
+    width: 31%; /* Each column takes up one-third of the width */
+    padding: 10px; /* Remove padding to ensure columns fit within the available space */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.column1 {
+    float: left;
+    width: 31%; /* Each column takes up one-third of the width */
+    padding: 0; /* Remove padding to ensure columns fit within the available space */
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  /* Clear floats after the columns */
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column2 img {
+    max-width: 40%; /* Set the maximum width of the images to 100% */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto;
+  }
+  .column2 {
+    float: left;
+    width: 31%; /* Each column takes up one-third of the width */
+    padding: 0; /* Remove padding to ensure columns fit within the available space */
+  }
+  
+  /* Clear floats after the columns */
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+    
