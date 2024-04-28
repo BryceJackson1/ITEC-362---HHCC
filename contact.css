@@ -5,6 +5,7 @@
 .social-media p {
     font-weight: bold;
     font-size: 18px;
+    font-style: italic;
 }
 
 .social-media a {
@@ -173,4 +174,5 @@ footer {
 .contact-info p {
     font-size: 24px;
     font-weight: bold;
+    font-style: italic
 }
