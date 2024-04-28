@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="contact.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6LCGK66CWD"></script>
     <script>
@@ -10,6 +10,7 @@
         gtag('js', new Date());
         gtag('config', 'G-6LCGK66CWD');
     </script>
+    <script src="formValidation.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heavenly Hands Christian Counseling</title>
@@ -18,6 +19,37 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Bryce Jackson">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .pos_cen {
+        display: flex;
+        align-items: center; /* Center items vertically */
+        justify-content: center; /* Center items horizontally */
+        text-align: center; /* Center text within the container */
+    }
+
+    .pos_cen p {
+        width: 70%; /* Set the width of the paragraph */
+        font-size: 17px; /* Optionally, adjust the font size to make it appear smaller */
+        margin-top: 30px;
+    }
+</style>
+<style>
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer section:last-child {
+        margin-top: auto;
+    }
+    
+    #copyright {
+        text-align: center;
+        font-style: italic;
+        color: #ffffff;
+    }
+    
+</style>
 <body>
     <header>
         <h1><img src="logo.jpg" alt="logo"></h1>
@@ -25,75 +57,62 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about_us.html">About</li>
+                <li><a href="about_us.html">About</a></li>
                 <li><a href="resources.html">Blogs and Resouces</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <title>Contact Us</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-        }
-        label {
-            display: block;
-            margin-bottom: 10px;
-        }
-        input[type="text"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-    </style>
-</head>
-<body>
 
-<div class="container">
-    <h1>Contact Us</h1>
-    <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <main style="text-align: center;">
 
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" required>
+        <div class="contact-info">
+            <p>Contact Us Anytime</p>
+        </div>
+        
+        <article class="pos_cen">
+            <p>We're thrilled you've stopped by our website! At Heavenly Hands Christian Counseling, we believe in the power of connection and support. Whether you have questions, want to schedule a counseling session, or simply need someone to talk to, we're here for you. 
+                Feel free to reach out to us using the contact form below, and one of our compassionate team members will get back to you as soon as possible. Your well-being is our top priority, and we're committed to providing a safe and welcoming space for you to explore your journey towards healing and growth. 
+                We look forward to connecting with you soon!</p>
+        </article>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
+        <div class="social-media">
+            <p>Follow Us On Our Social Media</p>
+            <a href="https://www.facebook.com/sharon.j.fuller.1/" target="_blank">
+                <img src="Facebook.png" alt="Facebook">
+            </a>
+        </div>
+    </main>
 
-        <input type="submit" value="Submit">
-    </form>
-</div>
-
-</body>
-</html>
+    <footer>
+        <section>
+            <form action="submit-form-url" method="post" onsubmit="return validateForm()">
+                <label for="firstname">First Name:</label><br>
+                <input type="text" id="firstname" name="firstname" required><br><br>
+                
+                <label for="lastname">Last Name:</label><br>
+                <input type="text" id="lastname" name="lastname" required><br><br>
+                
+                <label for="phone">Cell Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+                
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <input type="submit" value="Join Us">
+            </form>
+        </section>
+        <section>
+            <a href="https://calendly.com/your-username" class="book-appointment" target="_blank">Book an Appointment</a>
+        </section>
+    
+        <section>
+            <img src="photo.png" class="footer-img">
+            <p id="contact-email">HeavenlyHandsBeauty@yahoo.com</p>
+            <p id="contact-number">864-516-4278</p>
+            <p id="trademark">The Lord is my light and my salvation— whom shall I fear? The Lord is the stronghold of my life— of whom shall I be afraid? Psalm 27:1</p>
+            <p id="copyright">&copy; 2024 Heavenly Hands Christian Counseling</p>
+        </section>
+    </footer>
     

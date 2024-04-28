@@ -1,48 +1,36 @@
 .column {
     float: left;
-    width: 31%; /* Each column takes up one-third of the width */
-    padding: 10px; /* Remove padding to ensure columns fit within the available space */
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
+    width: 20%; /* Adjust the width to fit within the container */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
-.column1 {
-    float: left;
-    width: 31%; /* Each column takes up one-third of the width */
-    padding: 0; /* Remove padding to ensure columns fit within the available space */
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-  }
-  
-  /* Clear floats after the columns */
-  .row1:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .column2 img {
-    max-width: 40%; /* Set the maximum width of the images to 100% */
-    height: auto; /* Maintain aspect ratio */
+}
+
+.column2 img {
+    max-width: 100%; /* Adjust the max-width of the images */
+    height: auto;
     display: block;
     margin: 0 auto;
-  }
-  .column2 {
+}
+
+.column2 {
     float: left;
-    width: 31%; /* Each column takes up one-third of the width */
-    padding: 0; /* Remove padding to ensure columns fit within the available space */
-  }
-  
-  /* Clear floats after the columns */
-  .row2:after {
+    width: 20%; /* Adjust the width to fit within the container */
+    padding: 0;
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.row2:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
+
   /* mystyle.css */
 /* Resetting default margin and padding */
 body, h1, h2, h3, p, ul, li {
@@ -189,5 +177,3 @@ footer {
     color: #fff; /* Set color to match footer text */
     font-size: 14px; /* Adjust font size as needed */
 }
-
-    

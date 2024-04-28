@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="about.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6LCGK66CWD"></script>
     <script>
@@ -10,6 +10,7 @@
         gtag('js', new Date());
         gtag('config', 'G-6LCGK66CWD');
     </script>
+    <script src="formValidation.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heavenly Hands Christian Counseling - About Us</title>
@@ -108,6 +109,35 @@
                 </p>
             </div>
         </section>
+
+        <div class="row2" style="text-align: center;">
+            <div class="column2" style="display: inline-block; width: 30%;">
+                <p><b>Christian Counseling</b></p>
+            </div>
+            <div class="column2" style="display: inline-block; width: 30%;">
+                <p><b>Addiction Counseling</b></p>
+            </div>
+            <div class="column2" style="display: inline-block; width: 30%;">
+                <p><b>Counseling for Children and Adolescents</b></p>
+            </div>
+        </div>
+        
+        <div class="row" style="text-align: center;">
+            <div class="column" style="display: inline-block; width: 30%;">
+                <p>At Heavenly Hands, we integrate Christian principles and values into our counseling approach, offering clients 
+                    the opportunity to explore their faith journey, spiritual beliefs, and relationship with God within the therapeutic process. Our faith-based counseling services aim to 
+                    provide holistic healing that encompasses the mind, body, and spirit.</p>
+            </div>
+            <div class="column" style="display: inline-block; width: 30%;">
+                <p>We offer counseling services for individuals struggling with addiction, whether it be substance abuse, alcoholism, gambling, or other addictive behaviors. 
+                    Our counselors provide personalized treatment plans, support in recovery, and guidance in navigating the spiritual dimensions of addiction.</p>
+            </div>
+            <div class="column" style="display: inline-block; width: 30%;">
+                <p>Our team includes counselors experienced in working with children and adolescents, addressing issues such as behavioral challenges, academic struggles, family conflict, peer relationships, and emotional regulation.
+                 We provide age-appropriate counseling approaches that honor the developmental needs and unique perspectives of young clients.</p>
+            </div>
+        </div>
+              
     </main>
 
     <footer>
@@ -128,33 +158,6 @@
                 <input type="submit" value="Join Us">
             </form>
         </section>
-        
-        <script>
-            function validateForm() {
-                var firstName = document.getElementById("firstname").value;
-                var lastName = document.getElementById("lastname").value;
-                var phone = document.getElementById("phone").value;
-                var email = document.getElementById("email").value;
-                
-                // Perform validation checks
-                if (firstName === "" || lastName === "" || phone === "" || email === "") {
-                    alert("Please fill in all fields.");
-                    return false;
-                }
-                
-                // Validate phone number format
-                var phonePattern = /^\d{3}-\d{3}-\d{4}$/;
-                if (!phonePattern.test(phone)) {
-                    alert("Please enter a valid phone number in the format XXX-XXX-XXXX.");
-                    return false;
-                }
-                
-                // Add more validation rules as needed
-                
-                return true; // If all validation passes, return true to submit the form
-            }
-        </script>
-
         <section>
             <a href="https://calendly.com/your-username" class="book-appointment" target="_blank">Book an Appointment</a>
         </section>
